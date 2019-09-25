@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  fetch('http://localhost:3001/api/ping');
+  fetch('http://localhost:3001/api/open').then((x) => console.log(x.json()));
+
   return (
     <div className="App">
       <header className="App-header">

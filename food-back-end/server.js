@@ -25,7 +25,29 @@ app.use(logger('dev'));
 
 
 
-router.get('/ping', (req, res) => {
+router.get('/api/ping', (req, res) => {
     console.log('ping: ' + JSON.stringify(req.body));
     return res.json({ success: true });
   });
+
+router.get('/api/open', (req, res) => {
+    console.log('open');
+    return res.json(
+      {
+        success: true, 
+        recipe: 
+        {
+          name: "foo",
+          ingrediants: [],
+          description: 'This recepe is foo.',
+          body: 'Here are the steps for the foo recipe',
+          author: 'RJ'
+        }
+      })  
+  });
+
+// append /api for our http requests
+//app.use('/api', router);
+
+// launch our backend into a port
+app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
