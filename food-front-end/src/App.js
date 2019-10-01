@@ -1,12 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+//import axios from 'axios';
 
 function App() {
-
-  fetch('http://localhost:3001/api/ping');
-  fetch('http://localhost:3001/api/open').then((x) => console.log(x.json()));
-
   return (
     <div className="App">
       <header className="App-header">
@@ -22,9 +19,20 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={test}>Test</button>
       </header>
     </div>
   );
+}
+
+function test(){
+  console.log("Test")
+  call('http://localhost:3001/api/ping', (x) => console.log('ping: ' + JSON.stringify(x)));
+  call('http://localhost:3001/api/open', (x) => console.log('response: ' + JSON.stringify(x)));
+}
+
+function call(apiMethod, func){
+  fetch(apiMethod).then((x) => x.json().then(func));
 }
 
 export default App;
