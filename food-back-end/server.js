@@ -30,8 +30,8 @@ router.get('/ping', (req, res) => {
     return res.json({ success: true });
   });
 
-router.get('/open', (req, res) => {
-    console.log('open');
+router.post('/open', (req, res) => {
+    console.log('open: ' + JSON.stringify(req.body));
     return res.json(
       {
         success: true, 
@@ -44,6 +44,21 @@ router.get('/open', (req, res) => {
           author: 'RJ'
         }
       })
+  });
+
+  router.post('/save', (req, res) => {
+    console.log('save: ' + JSON.stringify(req.body));
+    return res.json({
+      success: true,
+      id: -1
+    })
+  });
+
+  router.post('/delete', (req, res) => {
+    console.log('delete: ' + JSON.stringify(req.body));
+    return res.json({
+      success: true,
+    })
   });
 
 // append /api for our http requests
