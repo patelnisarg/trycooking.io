@@ -1,0 +1,23 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left: 70%;
+  margin-right: 10%;
+  text-align: left;
+  float: right;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card p {
+  border: 10px solid gray;
+  width: 200px;
+  padding: 30px;
+  margin: 10px;
+}
+.canvasbox {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #d3d3d3;
+}
