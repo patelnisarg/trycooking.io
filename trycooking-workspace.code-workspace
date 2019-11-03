@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "food-front-end/src"
+		},
+		{
+			"path": "documentation"
 		}
 	],
 	"settings": {}
