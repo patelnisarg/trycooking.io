@@ -25,13 +25,13 @@ app.use(logger('dev'));
 
 
 
-router.get('/api/ping', (req, res) => {
+router.get('/ping', (req, res) => {
     console.log('ping: ' + JSON.stringify(req.body));
     return res.json({ success: true });
   });
 
-router.get('/api/open', (req, res) => {
-    console.log('open');
+router.post('/open', (req, res) => {
+    console.log('open: ' + JSON.stringify(req.body));
     return res.json(
       {
         success: true, 
@@ -43,11 +43,26 @@ router.get('/api/open', (req, res) => {
           body: 'Here are the steps for the foo recipe',
           author: 'RJ'
         }
-      })  
+      })
+  });
+
+  router.post('/save', (req, res) => {
+    console.log('save: ' + JSON.stringify(req.body));
+    return res.json({
+      success: true,
+      id: -1
+    })
+  });
+
+  router.post('/delete', (req, res) => {
+    console.log('delete: ' + JSON.stringify(req.body));
+    return res.json({
+      success: true,
+    })
   });
 
 // append /api for our http requests
-//app.use('/api', router);
+app.use('/api', router);
 
 // launch our backend into a port
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
