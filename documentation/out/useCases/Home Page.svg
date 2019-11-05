@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="191px" preserveAspectRatio="none" style="width:394px;height:191px;" version="1.1" viewBox="0 0 394 191" width="394px" zoomAndPan="magnify"><defs><filter height="300%" id="f1i3maha07pk5i" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster Homepage--><rect fill="#FFFFFF" filter="url(#f1i3maha07pk5i)" height="156" style="stroke: #000000; stroke-width: 1.5;" width="184" x="80" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="134.5" y="40.5332">Homepage</text><ellipse cx="172.2142" cy="78.1428" fill="#FEFECE" filter="url(#f1i3maha07pk5i)" rx="76.2142" ry="17.6428" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="117" x="113.7142" y="83.4475">Search for Recipie</text><ellipse cx="172.1327" cy="147.1265" fill="#FEFECE" filter="url(#f1i3maha07pk5i)" rx="71.1327" ry="16.6265" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="104" x="120.1327" y="152.4312">Browse Recipies</text><!--entity user--><ellipse cx="21" cy="80.5" fill="#FEFECE" filter="url(#f1i3maha07pk5i)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M21,88.5 L21,115.5 M8,96.5 L34,96.5 M21,115.5 L8,130.5 M21,115.5 L34,130.5 " fill="none" filter="url(#f1i3maha07pk5i)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="7" y="152.0332">user</text><!--entity backend--><path d="M308,99.5 C308,89.5 345,89.5 345,89.5 C345,89.5 382,89.5 382,99.5 L382,126.1094 C382,136.1094 345,136.1094 345,136.1094 C345,136.1094 308,136.1094 308,126.1094 L308,99.5 " fill="#FEFECE" filter="url(#f1i3maha07pk5i)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M308,99.5 C308,109.5 345,109.5 345,109.5 C345,109.5 382,109.5 382,99.5 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="318" y="128.0332">backend</text><!--link user to Search for Recipie--><path d="M36.0176,109.7073 C54.7082,105.3169 88.8371,97.3 118.099,90.426 " fill="none" id="user-Search for Recipie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Search for Recipie to backend--><path d="M229.466,89.557 C255.246,94.834 285.021,100.9284 307.751,105.5806 " fill="none" id="Search for Recipie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Browse Recipies--><path d="M36.0176,116.1986 C55.2877,120.5959 90.9685,128.7378 120.807,135.5465 " fill="none" id="user-Browse Recipies" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Browse Recipies to backend--><path d="M226.636,136.3355 C253.082,131.0773 284.273,124.8754 307.851,120.1875 " fill="none" id="Browse Recipies-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml Home Page
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+rectangle Homepage{
+        user - - (Search for Recipie)
+        (Search for Recipie) - - backend
+
+        user - - (Browse Recipies)
+        (Browse Recipies) - - backend
+}
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
