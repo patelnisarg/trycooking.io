@@ -40,3 +40,25 @@ class DeleteResponse{
     success : bool
 }
 @enduml
+
+@startuml Homepage
+class HomepageRequest{
+    userID : int
+}
+
+class HomepageResponse{
+    success : bool
+    recipies : Recipie[]
+}
+@enduml
+
+@startuml Search
+class SearchRequest{
+    searchText : string
+}
+
+class SearchResponse{
+    success : bool
+    recipies : Recipie[]
+}
+@enduml

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="750px" preserveAspectRatio="none" style="width:540px;height:750px;" version="1.1" viewBox="0 0 540 750" width="540px" zoomAndPan="magnify"><defs><filter height="300%" id="fuwvh14uq9bg4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster TryCooking.io--><rect fill="#FFFFFF" filter="url(#fuwvh14uq9bg4)" height="715" style="stroke: #000000; stroke-width: 1.5;" width="275" x="132" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="96" x="221.5" y="40.5332">TryCooking.io</text><!--cluster Homepage--><rect fill="#FFFFFF" filter="url(#fuwvh14uq9bg4)" height="96" style="stroke: #000000; stroke-width: 1.5;" width="227" x="156" y="68"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="75" x="232" y="84.5332">Homepage</text><!--cluster Manage_My_Account--><rect fill="#FFFFFF" filter="url(#fuwvh14uq9bg4)" height="151" style="stroke: #000000; stroke-width: 1.5;" width="170" x="184.5" y="188"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="149" x="195" y="204.5332">Manage_My_Account</text><!--cluster Manage_My_Recipie--><rect fill="#FFFFFF" filter="url(#fuwvh14uq9bg4)" height="186" style="stroke: #000000; stroke-width: 1.5;" width="183" x="178" y="371"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="145" x="197" y="387.5332">Manage_My_Recipie</text><!--cluster Edit_Recipies--><rect fill="#FFFFFF" filter="url(#fuwvh14uq9bg4)" height="84" style="stroke: #000000; stroke-width: 1.5;" width="144" x="197.5" y="589"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="96" x="221.5" y="605.5332">Edit_Recipies</text><ellipse cx="269.3614" cy="706.9517" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="58.8614" ry="15.4517" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="229.8614" y="712.2564">Authenticate</text><ellipse cx="269.3945" cy="125.8789" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="97.3945" ry="21.8789" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="167" x="185.8945" y="131.1836">Search/Browse for Recipie</text><ellipse cx="269.3716" cy="240.1743" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="68.8716" ry="16.1743" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="220.3716" y="245.479">Create Account</text><ellipse cx="269.6311" cy="307.0262" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="68.1311" ry="16.0262" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="221.6311" y="312.3309">Delete Account</text><ellipse cx="269.3977" cy="430.8795" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="67.3977" ry="15.8795" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="222.3977" y="436.1842">Create Recipie</text><ellipse cx="269.6715" cy="498.2343" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="66.6715" ry="15.7343" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="92" x="223.6715" y="503.539">Delete Recipie</text><ellipse cx="269.533" cy="640.9517" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="56.033" ry="15.4517" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="75" x="232.033" y="646.2564">Edit Recipie</text><!--entity user--><ellipse cx="21" cy="340.5" fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M21,348.5 L21,375.5 M8,356.5 L34,356.5 M21,375.5 L8,390.5 M21,375.5 L34,390.5 " fill="none" filter="url(#fuwvh14uq9bg4)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="7" y="412.0332">user</text><!--entity backend--><path d="M454,359.5 C454,349.5 491,349.5 491,349.5 C491,349.5 528,349.5 528,359.5 L528,386.1094 C528,396.1094 491,396.1094 491,396.1094 C491,396.1094 454,396.1094 454,386.1094 L454,359.5 " fill="#FEFECE" filter="url(#fuwvh14uq9bg4)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M454,359.5 C454,369.5 491,369.5 491,369.5 C491,369.5 528,369.5 528,359.5 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="464" y="388.0332">backend</text><!--link user to Search/Browse for Recipie--><path d="M36.0188,333.563 C43.5992,314.542 53.8935,291.825 66,273 C86.9431,240.435 93.8748,232.321 124,208 C155.308,182.723 195.403,160.645 225.412,145.785 " fill="none" id="user-Search/Browse for Recipie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Search/Browse for Recipie to backend--><path d="M320.247,144.836 C350.837,158.501 389.017,179.58 415,208 C453.324,249.918 474.89,314.753 484.278,349.349 " fill="none" id="Search/Browse for Recipie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Create Account--><path d="M36.2474,353.521 C54.1109,330.583 86.9258,293.071 124,273 C149.232,259.34 179.896,251.319 206.474,246.617 " fill="none" id="user-Create Account" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Create Account to backend--><path d="M335.087,244.976 C361.515,249.399 391.368,257.655 415,273 C444.121,291.91 466.138,326.245 478.555,349.337 " fill="none" id="Create Account-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Delete Account--><path d="M36.3183,369.166 C72.1789,359.565 167.031,334.168 223.79,318.971 " fill="none" id="user-Delete Account" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Delete Account to backend--><path d="M312.044,319.492 C352.935,331.787 414.754,350.375 453.721,362.091 " fill="none" id="Delete Account-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Create Recipie--><path d="M36.3183,376.369 C71.5624,384.662 163.787,406.362 220.83,419.783 " fill="none" id="user-Create Recipie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Create Recipie to backend--><path d="M315.184,419.193 C356.047,408.395 415.746,392.621 453.728,382.584 " fill="none" id="Create Recipie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Delete Recipie--><path d="M36.2997,390.474 C54.4599,411.465 87.8144,446.198 124,465 C150.259,478.645 182.086,486.69 209.179,491.413 " fill="none" id="user-Delete Recipie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Delete Recipie to backend--><path d="M332.627,492.913 C359.523,488.494 390.406,480.271 415,465 C442.135,448.15 463.906,417.978 476.86,396.793 " fill="none" id="Delete Recipie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Edit Recipie--><path d="M25.4499,415.735 C30.792,471.166 42.9423,563.659 66,588 C103.7377,627.838 167.41,639.119 213.292,641.671 " fill="none" id="user-Edit Recipie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Edit Recipie to backend--><path d="M307.815,629.693 C340.126,618.163 386.095,597.331 415,565 C459.483,515.244 478.958,436.083 486.254,396.768 " fill="none" id="Edit Recipie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Manage_My_Recipie to Authenticate--><path d="M177.7833,532.7947 C175.4372,532.7935 173.0853,532.8326 170.7331,532.9159 C161.3241,533.2493 151.9086,534.2913 142.8246,536.2993 C124.6565,540.3154 107.814,548.1958 95,562 C60.3103,599.37 86.6584,638.28 124,673 C145.73,693.2044 177.088,702.1415 205.133,705.8465 " fill="none" id="Manage_My_Recipie-&gt;Authenticate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="210.328,706.4789,201.8774,701.4205,205.3646,705.8746,200.9105,709.3619,210.328,706.4789" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="48" x="67" y="576.4951">Includes</text><!--
+@startuml Use Case
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle TryCooking.io{
+
+    rectangle Homepage{
+        user - - (Search/Browse for Recipie)
+        (Search/Browse for Recipie) - - backend
+    }
+    rectangle Manage_My_Account{
+        user - - (Create Account)
+        (Create Account) - - backend
+
+        user - - (Delete Account)
+        (Delete Account) - - backend
+    }
+
+    rectangle Manage_My_Recipie{
+        user - - (Create Recipie)
+        (Create Recipie) - - backend
+
+        user - - (Delete Recipie)
+        (Delete Recipie) - - backend
+    }
+
+    rectangle Edit_Recipies{
+
+        user - - (Edit Recipie)
+        (Edit Recipie) - - backend
+    }
+
+    Manage_My_Recipie -> (Authenticate) : Includes
+}
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

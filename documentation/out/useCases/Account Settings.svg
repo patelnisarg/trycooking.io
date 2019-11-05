@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="186px" preserveAspectRatio="none" style="width:380px;height:186px;" version="1.1" viewBox="0 0 380 186" width="380px" zoomAndPan="magnify"><defs><filter height="300%" id="f1othzc64mpl02" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster Account_Settings--><rect fill="#FFFFFF" filter="url(#f1othzc64mpl02)" height="151" style="stroke: #000000; stroke-width: 1.5;" width="170" x="80" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123" x="103.5" y="40.5332">Account_Settings</text><ellipse cx="164.8716" cy="76.1743" fill="#FEFECE" filter="url(#f1othzc64mpl02)" rx="68.8716" ry="16.1743" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="115.8716" y="81.479">Create Account</text><ellipse cx="165.1311" cy="143.0262" fill="#FEFECE" filter="url(#f1othzc64mpl02)" rx="68.1311" ry="16.0262" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="117.1311" y="148.3309">Delete Account</text><!--entity user--><ellipse cx="21" cy="77.5" fill="#FEFECE" filter="url(#f1othzc64mpl02)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M21,85.5 L21,112.5 M8,93.5 L34,93.5 M21,112.5 L8,127.5 M21,112.5 L34,127.5 " fill="none" filter="url(#f1othzc64mpl02)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="7" y="149.0332">user</text><!--entity backend--><path d="M294,96.5 C294,86.5 331,86.5 331,86.5 C331,86.5 368,86.5 368,96.5 L368,123.1094 C368,133.1094 331,133.1094 331,133.1094 C331,133.1094 294,133.1094 294,123.1094 L294,96.5 " fill="#FEFECE" filter="url(#f1othzc64mpl02)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M294,96.5 C294,106.5 331,106.5 331,106.5 C331,106.5 368,106.5 368,96.5 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="304" y="125.0332">backend</text><!--link user to Create Account--><path d="M36.1346,106.6156 C54.7246,102.1645 88.3245,94.1195 116.417,87.393 " fill="none" id="user-Create Account" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Create Account to backend--><path d="M216.992,86.571 C241.909,91.7373 271.307,97.8319 293.872,102.51 " fill="none" id="Create Account-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Delete Account--><path d="M36.1346,113.2848 C54.6545,117.5887 88.0712,125.3546 116.099,131.868 " fill="none" id="user-Delete Account" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Delete Account to backend--><path d="M217.441,132.6491 C242.24,127.659 271.391,121.7932 293.813,117.2816 " fill="none" id="Delete Account-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml Account Settings
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle Account_Settings{
+            user - - (Create Account)
+        (Create Account) - - backend
+
+        user - - (Delete Account)
+        (Delete Account) - - backend
+}
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_221-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
