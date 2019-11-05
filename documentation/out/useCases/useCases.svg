@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="703px" preserveAspectRatio="none" style="width:515px;height:703px;" version="1.1" viewBox="0 0 515 703" width="515px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fqnsg7v8u16e" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster API--><rect fill="#FFFFFF" filter="url(#f1fqnsg7v8u16e)" height="668" style="stroke: #000000; stroke-width: 1.5;" width="250" x="132" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="22" x="246" y="40.5332">API</text><!--cluster Manage_My_Account--><rect fill="#FFFFFF" filter="url(#f1fqnsg7v8u16e)" height="151" style="stroke: #000000; stroke-width: 1.5;" width="170" x="172" y="68"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="149" x="182.5" y="84.5332">Manage_My_Account</text><!--cluster Manage_My_Recepies--><rect fill="#FFFFFF" filter="url(#f1fqnsg7v8u16e)" height="253" style="stroke: #000000; stroke-width: 1.5;" width="186" x="164" y="251"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="158" x="178" y="267.5332">Manage_My_Recepies</text><!--cluster Home_Page--><rect fill="#FFFFFF" filter="url(#f1fqnsg7v8u16e)" height="90" style="stroke: #000000; stroke-width: 1.5;" width="194" x="160" y="536"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="83" x="215.5" y="552.5332">Home_Page</text><ellipse cx="256.8614" cy="659.9517" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="58.8614" ry="15.4517" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="217.3614" y="665.2564">Authenticate</text><ellipse cx="256.8716" cy="120.1743" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="68.8716" ry="16.1743" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="98" x="207.8716" y="125.479">Create Account</text><ellipse cx="257.1311" cy="187.0262" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="68.1311" ry="16.0262" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="96" x="209.1311" y="192.3309">Delete Account</text><ellipse cx="257.2443" cy="311.2489" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="69.2443" ry="16.2489" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="99" x="207.7443" y="316.5536">Create Recepie</text><ellipse cx="257.0685" cy="377.9517" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="59.5685" ry="15.4517" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="80" x="217.0685" y="383.2564">Edit Recepie</text><ellipse cx="257.0005" cy="445.1001" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="68.5005" ry="16.1001" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="97" x="208.5005" y="450.4048">Delete Recepie</text><ellipse cx="257.0917" cy="591.1183" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="81.0917" ry="18.6183" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="129" x="192.5917" y="596.423">Search for Recepies</text><!--entity user--><ellipse cx="21" cy="312.5" fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M21,320.5 L21,347.5 M8,328.5 L34,328.5 M21,347.5 L8,362.5 M21,347.5 L34,362.5 " fill="none" filter="url(#f1fqnsg7v8u16e)" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="28" x="7" y="384.0332">user</text><!--entity backend--><path d="M429,331.5 C429,321.5 466,321.5 466,321.5 C466,321.5 503,321.5 503,331.5 L503,358.1094 C503,368.1094 466,368.1094 466,368.1094 C466,368.1094 429,368.1094 429,358.1094 L429,331.5 " fill="#FEFECE" filter="url(#f1fqnsg7v8u16e)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M429,331.5 C429,341.5 466,341.5 466,341.5 C466,341.5 503,341.5 503,331.5 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="54" x="439" y="360.0332">backend</text><!--link user to Create Account--><path d="M33.4158,302.4 C47.4365,258.377 75.5367,190.902 124,153 C143.165,138.011 168.277,129.741 191.447,125.211 " fill="none" id="user-Create Account" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Create Account to backend--><path d="M323.857,124.112 C347.042,128.527 371.824,137.004 390,153 C440.639,197.566 457.368,280.6 462.669,321.289 " fill="none" id="Create Account-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Delete Account--><path d="M36.3913,332.969 C44.855,326.042 55.855,317.292 66,310 C123.592,268.602 194.426,224.434 231.198,201.983 " fill="none" id="user-Delete Account" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Delete Account to backend--><path d="M281.461,202.187 C308.306,219.83 353.296,250.208 390,279 C407.059,292.381 425.34,308.43 439.583,321.352 " fill="none" id="Delete Account-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Create Recepie--><path d="M36.2855,342.924 C67.6912,338.361 144.228,327.24 198.098,319.413 " fill="none" id="user-Create Recepie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Create Recepie to backend--><path d="M313.745,320.156 C350.267,326.155 396.951,333.823 428.73,339.043 " fill="none" id="Create Recepie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Edit Recepie--><path d="M36.2855,347.015 C68.9316,351.619 150.344,363.1 204.37,370.719 " fill="none" id="user-Edit Recepie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Edit Recepie to backend--><path d="M308.109,370.012 C345.441,364.06 395.534,356.074 428.973,350.743 " fill="none" id="Edit Recepie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link user to Delete Recepie--><path d="M36.0197,356.19 C54.9432,370.779 90.1952,396.179 124,411 C148.816,421.88 177.839,429.829 202.342,435.293 " fill="none" id="user-Delete Recepie" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Delete Recepie to backend--><path d="M315.054,436.392 C339.136,431.242 366.889,423.234 390,411 C410.388,400.207 429.835,382.814 443.816,368.593 " fill="none" id="Delete Recepie-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Manage_My_Recepies to Authenticate--><path d="M163.5991,482.0147 C163.3272,482.028 163.0553,482.042 162.7833,482.0566 C154.0819,482.5247 145.3928,483.6457 137.0195,485.6455 C120.2729,489.6453 104.79,497.1608 93,510 C56.9058,549.307 85.2221,589.338 124,626 C142.593,643.5788 168.984,652.393 193.361,656.7024 " fill="none" id="Manage_My_Recepies-&gt;Authenticate" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="198.529,657.5551,190.3006,652.1428,193.5958,656.7408,188.9977,660.036,198.529,657.5551" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="48" x="67" y="524.4951">Includes</text><!--link user to Search for Recepies--><path d="M26.774,387.633 C33.1653,437.201 46.063,514.928 66,536 C94.7932,566.433 139.294,580.351 177.992,586.582 " fill="none" id="user-Search for Recepies" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Search for Recepies to backend--><path d="M297.92,574.955 C326.676,561.697 364.711,540.441 390,512 C428.225,469.01 449.89,403.328 459.303,368.533 " fill="none" id="Search for Recepies-backend" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle API{
+
+    rectangle Manage_My_Account{
+        user - - (Create Account)
+        (Create Account) - - backend
+
+        user - - (Delete Account)
+        (Delete Account) - - backend
+    }
+
+    rectangle Manage_My_Recepies{
+        user - - (Create Recepie)
+        (Create Recepie) - - backend
+        user - - (Edit Recepie)
+        (Edit Recepie) - - backend
+        user - - (Delete Recepie)
+        (Delete Recepie) - - backend
+    }
+
+    Manage_My_Recepies -> (Authenticate) : Includes
+
+    rectangle Home_Page{
+        user - - (Search for Recepies)
+        (Search for Recepies) - - backend
+    }
+}
+
+
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 12:19:51 EDT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 9.0.4+11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
