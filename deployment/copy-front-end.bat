@@ -1,0 +1,1 @@
+./ftp.bat -b copy-front-end.src
