@@ -103,3 +103,6 @@ public
 #ppk keys
 *.ppk
 *.pem
+
+#packages lock
+*package-lock.json
