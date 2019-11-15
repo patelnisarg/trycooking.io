@@ -5,7 +5,7 @@ const database_path = './database.sqlite'
 
 var db;
 
-exports.connect = () => {
+function connect() {
     initializationSQL = fs.readFileSync('./CREATE_DATABASE.SQL', 'utf8');
 
     db = new sqlite3.Database(database_path, (err) => 
@@ -22,3 +22,5 @@ exports.connect = () => {
         console.log('DB Ready');
     });
 };
+
+exports.connect = connect;
