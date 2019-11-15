@@ -1,3 +1,15 @@
+//check if database exists
+const database = require('./database.js');
+database.connect();
+
+
+
+
+
+
+
+
+//bootstrap server
 const express = require('express');
 var cors = require('cors');
 const bodyParser = require('body-parser');
@@ -24,7 +36,7 @@ app.use(logger('dev'));
 
 
 
-
+//link api to server
 router.get('/ping', (req, res) => {
     console.log('ping: ' + JSON.stringify(req.body));
     return res.json({ success: true });
