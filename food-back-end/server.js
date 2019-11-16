@@ -1,7 +1,21 @@
-//check if database exists
+//connect to database
 const database = require('./database.js');
 database.connect();
 
+
+//debug code to insert
+var recipe =  {
+  id: -1,
+  name: "foo",
+  ingrediants: [0, 2],
+  description: 'This recepe is foo.',
+  body: 'Here are the steps for the foo recipe',
+  author: 'RJ'
+}
+
+console.log('calling');
+database.saveRecipe(recipe, (x) => {});
+database.openRecipe(3, (x) => {});
 
 
 
@@ -44,25 +58,28 @@ router.get('/ping', (req, res) => {
 
 router.post('/open', (req, res) => {
     console.log('open: ' + JSON.stringify(req.body));
-    return res.json(
-      {
-        success: true, 
-        recipe: 
-        {
-          name: "foo",
-          ingrediants: [],
-          description: 'This recepe is foo.',
-          body: 'Here are the steps for the foo recipe',
-          author: 'RJ'
-        }
-      })
+    try{
+      database.openRecipe(
+        req.body.id, 
+        (x) => {
+          return res.json({success: true, recipe: x})
+        });
+    }
+    catch{
+      return {success: false, recipe: {}};
+    }
   });
 
   router.post('/save', (req, res) => {
+    var body = req.body;
+    var recipe = body.recipe;
+    recipe.id = body.id;
     console.log('save: ' + JSON.stringify(req.body));
-    return res.json({
-      success: true,
-      id: -1
+    database.saveRecipe(recipe, (x) => {
+      return res.json({
+        success: true,
+        id: x
+      })
     })
   });
 

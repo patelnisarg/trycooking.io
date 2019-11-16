@@ -4,9 +4,11 @@ import Login from "./Components/Login/Login";
 import Signup from "./Components/Login/SingUp";
 import Profile from "./Components/Profile/Profile";
 class App extends Component {
+
   /* fetch('http://localhost:3001/api/ping');
   fetch('http://localhost:3001/api/open').then((x) => console.log(x.json()));*/
   render() {
+    test();
     return (
       <div>
         <Signup />
@@ -20,10 +22,10 @@ function test(){
     'http://localhost:3001/api/ping', 
     (x) => console.log('ping: ' + JSON.stringify(x))
   );
-
+  
   post(
     'http://localhost:3001/api/open', 
-    {id: -1},
+    {id: 3},
     (x) => console.log('open: ' + JSON.stringify(x))
   );
 
@@ -33,7 +35,7 @@ function test(){
       id: -1, 
       recipe: 
       {
-        name: "foo",
+        name: "faust",
         ingrediants: [],
         description: 'This recepe is foo.',
         body: 'Here are the steps for the foo recipe',
