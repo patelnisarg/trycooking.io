@@ -1,0 +1,17 @@
+Before you can start debugging the backend, you will have to install the required npm libraries. You can accomplish this by running the following command inside the backend folder.
+
+npm install
+
+the backend can be started locally with the command below.
+
+node server.js
+
+If you get an error, it is likely because the npm dependancies are not installed correctly. running 'npm install' or 'npm update' will usually fix this. If it seems really broken, try deleting your 'node_modules' folder and running 'npm install' after.
+
+The IP of the debug server will be 'http://localhost:3001'
+
+The api commands can be called using the post method in App.js, but you guys should consider moving that method to it's own script file, and importing it with an import statement.
+
+The ping command should be called from the api using the call method.
+
+You can see a list of functioning api calls inside the test method inside App.js
