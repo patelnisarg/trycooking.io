@@ -7,25 +7,6 @@ database.connect();
 
 
 
-//debug code to insert
-var recipe =  {
-  id: 42,
-  name: "fuck off",
-  ingrediants: [0, 2],
-  description: 'This recepe is foo.',
-  body: 'Here are the steps for the foo recipe',
-  author: 'RJ'
-}
-
-console.log('calling');
-database.saveRecipe(recipe, {username: 'RJ', p_hash: md5('FOO')}, (x) => {console.log(x)});
-database.openRecipe(3, (x) => {});
-
-//database.addUser('RJ', md5('FOO'), (x) => console.log(x));
-//database.updateUser('RJ', md5('FOO'), md5('BAR'), (x => console.log(x)));
-
-
-
 
 
 
@@ -98,6 +79,35 @@ router.post('/open', (req, res) => {
     console.log('delete: ' + JSON.stringify(req.body));
     return res.json({
       success: true,
+    })
+  });
+
+  router.post('/newUser', (req, res) => {
+    console.log('newUser: ' + JSON.stringify(req.body));
+    var username = req.body.username;
+    var password = req.body.password;
+    database.addUser(username, md5(password), (x) => {
+      if(x){
+        return res.json({success: true});
+      }
+      else{
+        return res.json({success: false});
+      }
+    })
+  });
+
+  router.post('/updatePassword', (req, res) => {
+    console.log('updatePassword: ' + JSON.stringify(req.body));
+    var username = req.body.username;
+    var password = req.body.password;
+    var oldPassword = req.body.oldPassword;
+    database.updateUser(username, md5(password), md5(oldPassword), (x) => {
+      if(x){
+        return res.json({success: true});
+      }
+      else{
+        return res.json({success: false});
+      }
     })
   });
 

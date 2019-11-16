@@ -54,6 +54,18 @@ function test(){
     {id: -1},
     (x) => console.log('delete: ' + JSON.stringify(x))
   );
+
+  post(
+    'http://localhost:3001/api/newUser',
+    {username: 'NotRJ', password: 'FOO'},
+    (x) => console.log('newUser: ' + JSON.stringify(x))
+  );
+
+  post(
+    'http://localhost:3001/api/updatePassword',
+    {username: 'NotRJ', password: 'FOO', oldPassword: 'BAR'},
+    (x) => console.log('updatePassword: ' + JSON.stringify(x))
+  );
 }
 
 function call(apiMethod, func){
