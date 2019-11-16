@@ -1,12 +1,16 @@
 //connect to database
 const database = require('./database.js');
+const md5 = require('blueimp-md5');
+
+
 database.connect();
+
 
 
 //debug code to insert
 var recipe =  {
-  id: -1,
-  name: "foo",
+  id: 42,
+  name: "fuck off",
   ingrediants: [0, 2],
   description: 'This recepe is foo.',
   body: 'Here are the steps for the foo recipe',
@@ -14,8 +18,14 @@ var recipe =  {
 }
 
 console.log('calling');
-database.saveRecipe(recipe, (x) => {});
+database.saveRecipe(recipe, {username: 'RJ', p_hash: md5('FOO')}, (x) => {console.log(x)});
 database.openRecipe(3, (x) => {});
+
+//database.addUser('RJ', md5('FOO'), (x) => console.log(x));
+//database.updateUser('RJ', md5('FOO'), md5('BAR'), (x => console.log(x)));
+
+
+
 
 
 
@@ -49,7 +59,6 @@ app.use(logger('dev'));
 
 
 
-
 //link api to server
 router.get('/ping', (req, res) => {
     console.log('ping: ' + JSON.stringify(req.body));
@@ -74,10 +83,12 @@ router.post('/open', (req, res) => {
     var body = req.body;
     var recipe = body.recipe;
     recipe.id = body.id;
+    var auth = body.auth;
+    auth.p_hash = md5(auth.password);
     console.log('save: ' + JSON.stringify(req.body));
-    database.saveRecipe(recipe, (x) => {
+    database.saveRecipe(recipe, auth, (x) => {
       return res.json({
-        success: true,
+        success: x !== -1,
         id: x
       })
     })

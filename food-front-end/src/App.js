@@ -33,9 +33,13 @@ function test(){
     'http://localhost:3001/api/save', 
     {
       id: -1, 
+      auth:{
+        username: "RJ",
+        password: 'FOO'
+      },
       recipe: 
       {
-        name: "faust",
+        name: "shit",
         ingrediants: [],
         description: 'This recepe is foo.',
         body: 'Here are the steps for the foo recipe',
