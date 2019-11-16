@@ -6,6 +6,25 @@
   text-align: left;
   float: right;
 }
+.grid {
+  display: flex;
+  grid-template-columns: 100px 100px;
+}
+.contain {
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.drop {
+  border: 10px solid gray;
+  margin-left: 10%;
+  width: 900px;
+  height: 530px;
+  float: left;
+}
 .card img {
   max-width: 100%;
   height: auto;
@@ -16,8 +35,6 @@
   padding: 30px;
   margin: 10px;
 }
-.canvasbox {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #d3d3d3;
+.section {
+  padding: 10px;
 }
