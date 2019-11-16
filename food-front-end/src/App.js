@@ -4,9 +4,11 @@ import Login from "./Components/Login/Login";
 import Signup from "./Components/Login/SingUp";
 import Profile from "./Components/Profile/Profile";
 class App extends Component {
+
   /* fetch('http://localhost:3001/api/ping');
   fetch('http://localhost:3001/api/open').then((x) => console.log(x.json()));*/
   render() {
+    test();
     return (
       <div>
         <Signup />
@@ -20,10 +22,10 @@ function test(){
     'http://localhost:3001/api/ping', 
     (x) => console.log('ping: ' + JSON.stringify(x))
   );
-
+  
   post(
     'http://localhost:3001/api/open', 
-    {id: -1},
+    {id: 3},
     (x) => console.log('open: ' + JSON.stringify(x))
   );
 
@@ -31,9 +33,13 @@ function test(){
     'http://localhost:3001/api/save', 
     {
       id: -1, 
+      auth:{
+        username: "RJ",
+        password: 'FOO'
+      },
       recipe: 
       {
-        name: "foo",
+        name: "shit",
         ingrediants: [],
         description: 'This recepe is foo.',
         body: 'Here are the steps for the foo recipe',
@@ -47,6 +53,18 @@ function test(){
     'http://localhost:3001/api/delete', 
     {id: -1},
     (x) => console.log('delete: ' + JSON.stringify(x))
+  );
+
+  post(
+    'http://localhost:3001/api/newUser',
+    {username: 'NotRJ', password: 'FOO'},
+    (x) => console.log('newUser: ' + JSON.stringify(x))
+  );
+
+  post(
+    'http://localhost:3001/api/updatePassword',
+    {username: 'NotRJ', password: 'FOO', oldPassword: 'BAR'},
+    (x) => console.log('updatePassword: ' + JSON.stringify(x))
   );
 }
 
