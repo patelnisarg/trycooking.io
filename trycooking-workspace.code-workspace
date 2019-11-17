@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "food-back-end"
+		},
+		{
+			"path": "food-front-end/src"
+		},
+		{
+			"path": "documentation"
+		}
+	],
+	"settings": {}
+}

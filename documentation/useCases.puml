@@ -1,0 +1,200 @@
+@startuml Home Page
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+rectangle Homepage{
+        user -- (Search for Recipie)
+        (Search for Recipie) -- backend
+
+        user -- (Browse Recipies)
+        (Browse Recipies) -- backend
+}
+@enduml
+
+
+
+@startuml Account Settings
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle Account_Settings{
+            user -- (Create Account)
+        (Create Account) -- backend
+
+        user -- (Delete Account)
+        (Delete Account) -- backend
+}
+@enduml
+
+
+
+
+@startuml Recipie Editing
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle Recipie_Editing{
+
+        user -- (Create Recipie)
+        (Create Recipie) -- backend
+        user -- (Edit Recipie)
+        (Edit Recipie) -- backend
+        user -- (Delete Recipie)
+        (Delete Recipie) -- backend
+
+        (Create Recipie) -> (Authenticate) : Includes
+        (Edit Recipie) -> (Authenticate) : Includes
+        (Delete Recipie) -> (Authenticate) : Includes
+}
+@enduml
+
+
+@startuml Use Case
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle TryCooking.io{
+
+    rectangle Homepage{
+        user -- (Search/Browse for Recipie)
+        (Search/Browse for Recipie) -- backend
+    }
+    rectangle Manage_My_Account{
+        user -- (Create Account)
+        (Create Account) -- backend
+
+        user -- (Delete Account)
+        (Delete Account) -- backend
+    }
+
+    rectangle Manage_My_Recipie{
+        user -- (Create Recipie)
+        (Create Recipie) -- backend
+
+        user -- (Delete Recipie)
+        (Delete Recipie) -- backend
+    }
+
+    rectangle Edit_Recipies{
+
+        user -- (Edit Recipie)
+        (Edit Recipie) -- backend
+    }
+
+    Manage_My_Recipie -> (Authenticate) : Includes
+}
+@enduml
+
+@startuml API
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+
+
+
+rectangle API{
+
+    rectangle Homepage{
+        user -- (Search/Browse for Recipie)
+        (Search/Browse for Recipie) -- backend
+    }
+    rectangle Manage_My_Account{
+        user -- (Create Account)
+        (Create Account) -- backend
+
+        user -- (Delete Account)
+        (Delete Account) -- backend
+    }
+
+    rectangle Manage_My_Recipie{
+        user -- (Create Recipie)
+        (Create Recipie) -- backend
+
+        user -- (Delete Recipie)
+        (Delete Recipie) -- backend
+    }
+
+    rectangle Edit_Recipies{
+
+        user -- (Edit Recipie)
+        (Edit Recipie) -- backend
+    }
+
+    Manage_My_Recipie -> (Authenticate) : Includes
+}
+@enduml
+
+@startuml Full Program
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor user
+database backend
+database database
+
+
+
+rectangle API{
+
+    rectangle Homepage{
+        user -- (Search/Browse for Recipie)
+        (Search/Browse for Recipie) -- backend
+    }
+    rectangle Manage_My_Account{
+        user -- (Create Account)
+        (Create Account) -- backend
+
+        user -- (Delete Account)
+        (Delete Account) -- backend
+    }
+
+    rectangle Manage_My_Recipie{
+        user -- (Create Recipie)
+        (Create Recipie) -- backend
+
+        user -- (Delete Recipie)
+        (Delete Recipie) -- backend
+    }
+
+    rectangle Edit_Recipies{
+
+        user -- (Edit Recipie)
+        (Edit Recipie) -- backend
+    }
+
+    Manage_My_Recipie -> (Authenticate) : Includes
+}
+
+backend -- database : Queries
+@enduml

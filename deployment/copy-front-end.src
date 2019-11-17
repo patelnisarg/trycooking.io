@@ -1,0 +1,3 @@
+lcd ..
+lcd food-front-end
+put -r build

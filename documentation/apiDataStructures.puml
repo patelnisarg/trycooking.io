@@ -1,0 +1,64 @@
+@startuml Recipie
+class Recipie{
+    name : string
+    id : int
+    description : string
+    body : string
+    author : string
+    ingrediants : int[]
+}
+@enduml
+
+@startuml Open
+class OpenReqest{
+    recipieID : int
+}
+
+class OpenResponse{
+    success : bool
+    recepie : Recipie
+}
+@enduml
+
+@startuml Save
+class SaveRequest{
+    recipie : Recipie
+}
+
+class SaveResponse{
+    success : bool
+    recipieID : int
+}
+@enduml
+
+@startuml Delete
+class DeleteRequest{
+    recipieID : int
+}
+
+class DeleteResponse{
+    success : bool
+}
+@enduml
+
+@startuml Homepage
+class HomepageRequest{
+    userID : int
+}
+
+class HomepageResponse{
+    success : bool
+    recipies : Recipie[]
+}
+@enduml
+
+@startuml Search
+class SearchRequest{
+    searchText : string
+}
+
+class SearchResponse{
+    success : bool
+    recipies : Recipie[]
+}
+@enduml
