@@ -1,0 +1,40 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left: 70%;
+  margin-right: 10%;
+  text-align: left;
+  float: right;
+}
+.grid {
+  display: flex;
+  grid-template-columns: 100px 100px;
+}
+.contain {
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.drop {
+  border: 10px solid gray;
+  margin-left: 10%;
+  width: 900px;
+  height: 530px;
+  float: left;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card p {
+  border: 10px solid gray;
+  width: 200px;
+  padding: 30px;
+  margin: 10px;
+}
+.section {
+  padding: 10px;
+}

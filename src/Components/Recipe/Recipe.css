@@ -1,0 +1,79 @@
+/*div {
+  border: 1px solid red;
+  padding: 1px;
+}
+header {
+  border: 1px solid black;
+  padding: 1px;
+}
+p {
+  border: 1px solid green;
+  padding: 1px;
+}
+ul {
+  border: 1px solid yellow;
+  padding: 1px;
+}
+li {
+  border: 1px solid orange;
+  padding: 1px;
+}
+a {
+  border: 1px solid brown;
+  padding: 1px;
+}
+*/
+li {
+  display: inline;
+}
+ul {
+  list-style-type: none;
+}
+.Nav {
+  display: flex;
+  background-color: black;
+}
+.log {
+  display: inline-block;
+  background-color: black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  min-width: 140px;
+}
+.Search {
+  margin-left: auto;
+}
+.Description,
+.Ingredients,
+.Instructions {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+}
+.temp {
+  width: 30%;
+  height: 20%;
+}
+li {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+ul {
+  width: 600px;
+  margin-left: auto;
+}
+a {
+  color: White;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-decoration: none;
+}
+a:hover {
+  background-color: white;
+  color: black;
+}
