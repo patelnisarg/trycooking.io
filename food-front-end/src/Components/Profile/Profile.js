@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 import "./Profile.css";
 import "../../App.css";
-import bannerImg from "../../Images/banner.png";
+import Navbar from "../Subcomponent/Nav";
 import profilepic from "../../Images/profile.jpg";
+import Dropzone from "react-dropzone";
 export default class Profile extends Component {
   render() {
     return (
       <div>
-        <img src={bannerImg} className="Banner-Component" alt="banner" />
+        <Navbar />
+        <Dropzone onDrop={this.onDrop}>
+          {({ getRootProps, getInputProps }) => (
+            <div {...getRootProps()}>
+              <input {...getInputProps()} />
+              Click me to upload a file!
+            </div>
+          )}
+        </Dropzone>
         <canvas id="canvasbox" />
         <div class="card">
           <img src={profilepic} alt="ProPic" />
