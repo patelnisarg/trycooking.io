@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import bannerImg from "../../Images/banner.png";
 import "./Recipe.css";
 import "../../App.css";
 import Navbar from "../Subcomponent/Nav";
