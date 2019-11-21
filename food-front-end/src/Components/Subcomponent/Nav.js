@@ -22,7 +22,7 @@ export default class Nav extends Component {
           <ul>
             <li>
               <a href="Home URL">
-                <Link to="/home">Home</Link>
+                <Link to="/">Home</Link>
               </a>
             </li>
             <li>
