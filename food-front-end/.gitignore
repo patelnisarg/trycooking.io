@@ -106,3 +106,5 @@ typings/
 
 #packages lock
 *package-lock.json
+
+*build/*
