@@ -10,6 +10,7 @@ class App extends Component {
   /* fetch('http://localhost:3001/api/ping');
   fetch('http://localhost:3001/api/open').then((x) => console.log(x.json()));*/
   render() {
+    test()
     return (
       <div>
         <Router>
@@ -50,7 +51,7 @@ function test() {
     x => console.log("save: " + JSON.stringify(x))
   );
 
-  post("http://localhost:3001/api/delete", { id: -1 }, x =>
+  post("http://localhost:3001/api/delete", { id: 1, auth: {username: "RJ", password: 'FOO'}}, x =>
     console.log("delete: " + JSON.stringify(x))
   );
 }

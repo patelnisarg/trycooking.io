@@ -47,39 +47,61 @@ router.get('/ping', (req, res) => {
   });
 
 router.post('/open', (req, res) => {
-    console.log('open: ' + JSON.stringify(req.body));
     try{
-      database.openRecipe(
-        req.body.id, 
-        (x) => {
-          return res.json({success: true, recipe: x})
-        });
+      console.log('open: ' + JSON.stringify(req.body));
+      try{
+        database.openRecipe(
+          req.body.id, 
+          (x) => {
+            return res.json({success: true, recipe: x})
+          });
+      }
+      catch{
+        return {success: false, recipe: {}};
+      }
     }
     catch{
-      return {success: false, recipe: {}};
+      return res.json({success: false}); 
     }
   });
 
   router.post('/save', (req, res) => {
-    var body = req.body;
-    var recipe = body.recipe;
-    recipe.id = body.id;
-    var auth = body.auth;
-    auth.p_hash = md5(auth.password);
-    console.log('save: ' + JSON.stringify(req.body));
-    database.saveRecipe(recipe, auth, (x) => {
-      return res.json({
-        success: x !== -1,
-        id: x
+    try{
+      var body = req.body;
+      var recipe = body.recipe;
+      recipe.id = body.id;
+      var auth = body.auth;
+      auth.p_hash = md5(auth.password);
+      console.log('save: ' + JSON.stringify(req.body));
+      database.saveRecipe(recipe, auth, (x) => {
+        return res.json({
+          success: x !== -1,
+          id: x
+        })
       })
-    })
+    }
+    catch{
+      return res.json({
+        success: false
+      })
+    }
   });
 
   router.post('/delete', (req, res) => {
-    console.log('delete: ' + JSON.stringify(req.body));
-    return res.json({
-      success: true,
-    })
+    try{
+      console.log('delete: ' + JSON.stringify(req.body));
+      var auth = req.body.auth;
+      auth.password = md5(auth.password);
+      var id = req.body.id;
+      return database.deleteRecipe(auth, id, (x) => {
+        return res.json({success : x});
+      })
+    }
+    catch{
+      return res.json({
+        success: false
+      })
+    }
   });
 
   router.post('/newUser', (req, res) => {
