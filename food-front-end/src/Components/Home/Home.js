@@ -4,6 +4,7 @@ import "../../App.css";
 import "./Home.css";
 import Navbar from "../Subcomponent/Nav";
 import Slide from "./Slideshow";
+import hamburgerImg from "./../../Images/hamburger.jpg";
 /*import slide1 from "../../Images/slide1.jpg";
 import slide2 from "../../Images/slide2.jpg";
 import slide3 from "../../Images/slide3.jpg";
@@ -23,6 +24,9 @@ export default class Home extends Component {
             <Slide />
           </div>
         </div>
+        <button>
+          <img src={hamburgerImg} />
+        </button>
       </div>
     );
   }

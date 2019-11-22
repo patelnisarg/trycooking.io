@@ -6,6 +6,43 @@
   text-align: left;
   float: right;
 }
+.column {
+  margin: 5%;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 600px;
+  background-color: silver;
+  border: 10px solid gray;
+}
+.column1 {
+  float: right;
+  width: 100%;
+  padding: 10px;
+  height: 300px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+}
+.grid {
+  display: flex;
+  grid-template-columns: 100px 100px;
+}
+.contain {
+  width: 100%;
+  border-radius: 0.5em;
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.drop {
+  border: solid gray;
+  width: fit-content;
+}
 .card img {
   max-width: 100%;
   height: auto;
@@ -16,8 +53,6 @@
   padding: 30px;
   margin: 10px;
 }
-.canvasbox {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #d3d3d3;
+.section {
+  padding: 10px;
 }

@@ -1,6 +1,8 @@
 import "./Nav.css";
 import bannerImg from "../../Images/banner.png";
 import React, { Component } from "react";
+import Home from "../Home/Home";
+import { Link } from "react-router-dom";
 export default class Nav extends Component {
   render() {
     return (
@@ -8,19 +10,30 @@ export default class Nav extends Component {
         <div>
           <img src={bannerImg} className="Banner-Component" alt="banner" />
           <p className="log">
-            <a href="Login">Login</a> <a href="Sign Up">Sign Up</a>
+            <a href="Login">
+              <Link to="/login">Login</Link>
+            </a>{" "}
+            <a href="Sign Up">
+              <Link to="/signup">Sign Up</Link>
+            </a>
           </p>
         </div>
         <div className="Nav">
           <ul>
             <li>
-              <a href="Home URL">Home</a>
+              <a href="Home URL">
+                <Link to="/">Home</Link>
+              </a>
             </li>
             <li>
-              <a href="Recipe URL">Recipe</a>
+              <a href="Recipe URL">
+                <Link to="/recipe">Recipe</Link>
+              </a>
             </li>
             <li>
-              <a href="Creators URL">Creators</a>
+              <a href="Creators URL">
+                <Link to="/profile">Creators</Link>
+              </a>
             </li>
             <li>
               <a href="About us URL">About Us</a>
