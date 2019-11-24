@@ -29,6 +29,8 @@ const getUserAuthSQL = fs.readFileSync('./SQL/GET_USER_FOR_AUTH.SQL', 'utf8');
 const updateUserSQL = fs.readFileSync('./SQL/UPDATE_USER.SQL', 'utf8');
 const insertUserSQL = fs.readFileSync('./SQL/INSERT_USER.SQL', 'utf8');
 
+const deleteRecipeSQL = fs.readFileSync('./SQL/DELETE_RECIPE.SQL', 'utf8');
+
 
 
 //Field for the connection to the database
@@ -113,6 +115,7 @@ function openRecipe(id, eventHandler){
                         return console.error(err.message);
                     }
                     else{
+                        try{
                         return eventHandler({
                             id: row.ID,
                             name: row.RECIPE_NAME,
@@ -121,6 +124,10 @@ function openRecipe(id, eventHandler){
                             body: row.RECIPE_BODY,
                             author: row.RECIPE_AUTHOR
                         });
+                        }
+                        catch{
+                            
+                        }
                     }
                 });
                 
@@ -128,6 +135,36 @@ function openRecipe(id, eventHandler){
         });
 }
 
+function deleteRecipe(auth, id, eventHandler){
+    console.log(JSON.stringify(auth));
+
+    var username = auth.username;
+    var password = auth.password;
+
+
+    return authenticateUser(username, password, (x) => {
+        if(x){
+            db.run(deleteRecipeSQL, [id, username], (err, row) => {
+                if(err){
+                    return eventHandler(false);
+                }
+                else{
+                    db.run(wipeRecipeIngrediantsSQL, [id], (err, row) => {
+                        if(err){
+                            return eventHandler(false);
+                        }
+                        else{
+                            return eventHandler(true);
+                        }
+                    });
+                }
+            });
+        }
+        else{
+            return eventHandler(false);
+        }
+    });
+}
 
 
 
@@ -194,6 +231,7 @@ function authenticateUser(username, p_hash, eventHandler){
 exports.connect = connect;
 exports.saveRecipe = saveRecipe;
 exports.openRecipe = openRecipe;
+exports.deleteRecipe = deleteRecipe;
 
 exports.addUser = addUser;
 exports.updateUser = updateUser;
