@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import bannerImg from "../../Images/banner.png";
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 import "../../App.css";
+import "./Login.css";
 export default class Login extends Component {
   constructor(props) {
     super(props);

@@ -65,13 +65,18 @@ ul {
   width: 600px;
   margin-left: auto;
 }
+.button1,
+.button2 {
+  background-color: black;
+}
 a {
   color: White;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   text-decoration: none;
+  background-color: black;
 }
 a:hover {
   background-color: white;

@@ -24,9 +24,28 @@ export default class Home extends Component {
             <Slide />
           </div>
         </div>
-        <button>
-          <img src={hamburgerImg} />
-        </button>
+        <div className="sec1">
+          <button>
+            <img src={hamburgerImg} />
+          </button>
+          <button>
+            <img src={hamburgerImg} />
+          </button>
+          <button>
+            <img src={hamburgerImg} />
+          </button>
+        </div>
+        <div className="sec3">
+          <button>
+            <img src={hamburgerImg} />
+          </button>
+          <button>
+            <img src={hamburgerImg} />
+          </button>
+          <button>
+            <img src={hamburgerImg} />
+          </button>
+        </div>
       </div>
     );
   }
