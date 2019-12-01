@@ -15,12 +15,22 @@
   position: relative;
 }
 
+.form-input{
+  color: black
+}
+
 .sec1 {
   width: 100px;
   float: left;
   margin-right: 20%;
+  color: black
 }
 .sec2 {
   width: 100px;
   float: right;
+}
+
+.form-button{
+  width:100px;
+  height:20px;
 }
