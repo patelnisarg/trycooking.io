@@ -36,7 +36,7 @@ export default class Nav extends Component {
               </a>
             </li>
             <li>
-              <a href="About us URL">About Us</a>
+              <a href="About us URL">About</a>
             </li>
           </ul>
           <div className="Search">

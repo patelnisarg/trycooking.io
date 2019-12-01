@@ -88,3 +88,22 @@
   border-radius: 5px;
   transition: background-color 1s ease-in-out;
 }
+.image-fit {
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
+  background-color: black;
+  justify-items: center;
+}
+.sec1 {
+  width: 33%;
+  float: left;
+}
+.sec2 {
+  float: center;
+  width: 33%;
+}
+.sec3 {
+  width: 33%;
+  float: right;
+}

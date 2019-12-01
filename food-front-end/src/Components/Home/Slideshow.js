@@ -3,6 +3,7 @@ import { Fade } from "react-slideshow-image";
 import slide1 from "../../Images/slide1.jpg";
 import slide2 from "../../Images/slide2.jpg";
 import slide3 from "../../Images/slide3.jpg";
+import "./Home.css";
 const Images = [slide1, slide2, slide3];
 const fade = {
   duration: 5000,
@@ -20,17 +21,17 @@ export default class Slideshow extends Component {
         <Fade {...fade}>
           <div className="each-fade">
             <div className="image-container">
-              <img src={Images[0]} />
+              <img className="image-fit" src={Images[0]} />
             </div>
           </div>
           <div className="each-fade">
             <div className="image-container">
-              <img src={Images[1]} />
+              <img className="image-fit" src={Images[1]} />
             </div>
           </div>
           <div className="each-fade">
             <div className="image-container">
-              <img src={Images[2]} />
+              <img className="image-fit" src={Images[2]} />
             </div>
           </div>
         </Fade>

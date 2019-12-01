@@ -5,16 +5,20 @@ ul {
   list-style-type: none;
 }
 .Nav {
-  display: flex;
-  background-color: black;
-}
-.log {
-  margin-left: 80%;
   display: inline-block;
   background-color: black;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  min-width: 140px;
+  width: 100%;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  margin: auto;
+}
+.log {
+  margin-left: 88%;
+  display: inline-block;
+  background-color: black;
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  width: 180px;
 }
 .Search {
   margin-left: auto;
