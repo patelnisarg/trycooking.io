@@ -3,6 +3,7 @@ import bannerImg from "../../Images/banner.png";
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 import "../../App.css";
 import "./Login.css";
+import { post } from "../../lib/apiMethods.js";
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -23,10 +24,27 @@ export default class Login extends Component {
       [event.target.id]: event.target.value
     });
   };
+  
   handleSubmit (event) {
     event.preventDefault();
-    
-    alert(JSON.stringify(this.state));
+    var username = this.state.username;
+    var password = this.state.password;
+    post('http://localhost:3001/api/login',
+      {
+        username: username,
+        password: password
+      },
+      (x) => {
+        if (x.success) {
+          alert('login successfull');
+          this.props.history.push('/');
+        }
+        else {
+          alert('Incorrect username or Password');
+        }
+      }
+    );
+    //alert(JSON.stringify(this.state));
   };
 
   render() {

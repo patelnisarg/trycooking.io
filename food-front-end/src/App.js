@@ -10,7 +10,7 @@ class App extends Component {
   /* fetch('http://localhost:3001/api/ping');
   fetch('http://localhost:3001/api/open').then((x) => console.log(x.json()));*/
   render() {
-    test()
+   // test()
     return (
       <div>
         <Router>
