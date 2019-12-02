@@ -27,9 +27,23 @@
   background-repeat: no-repeat;
   position: relative;
   color: black;
-  width: fit-content;
+  /* align-self: center;
+  text-align: center; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.center {
+.center-boxes {
   text-align: center;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.margin-20{
+  margin: 20px;
 }
