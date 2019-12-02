@@ -8,13 +8,13 @@ export default class Nav extends Component {
     return (
       <header>
         <div>
-          <div className='center'>
+          <div className="center">
             <img src={bannerImg} className="Banner-Component" alt="banner" />
           </div>
           <p className="log">
             <a href="Login">
               <Link to="/login">Login</Link>
-            </a>{" "}
+            </a>
             <a href="Sign Up">
               <Link to="/signup">Sign Up</Link>
             </a>
@@ -36,9 +36,6 @@ export default class Nav extends Component {
               <a href="Creators URL">
                 <Link to="/profile">Creators</Link>
               </a>
-            </li>
-            <li>
-              <a href="About us URL">About</a>
             </li>
           </ul>
           <div className="Search">

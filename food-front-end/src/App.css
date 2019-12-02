@@ -21,16 +21,15 @@
   color: #09d3ac;
 }
 .Banner-Component {
-  margin-left: 10%;
-  margin-right: 10%;
   margin-bottom: 7%;
   background-image: url("./Images/banner.png");
   background-position: top, center;
   background-repeat: no-repeat;
   position: relative;
   color: black;
+  width: fit-content;
 }
 
-.center{
+.center {
   text-align: center;
 }

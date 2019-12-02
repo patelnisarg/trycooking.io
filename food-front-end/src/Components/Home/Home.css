@@ -4,7 +4,7 @@
   color: #fff;
 }
 .screenW {
-  width: 100vw;
+  width: 100%;
 }
 .fullW {
   width: 100%;
@@ -15,7 +15,7 @@
 .fullH {
   height: 100%;
 }
-.height70 {
+.height {
   height: 70px;
 }
 .dGray {
@@ -94,16 +94,4 @@
   object-fit: contain;
   background-color: black;
   justify-items: center;
-}
-.sec1 {
-  width: 33%;
-  float: left;
-}
-.sec2 {
-  float: center;
-  width: 33%;
-}
-.sec3 {
-  width: 33%;
-  float: right;
 }

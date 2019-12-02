@@ -31,16 +31,12 @@ export default class EditRecipe extends Component {
           <div className="Ingredients">
             <div id="temp">
               Ingredient:
-              <input type="text" id="ingredient" value="text" />
+              <input type="text" id="ingredient" />
               Amount:
-              <input type="text" id="amount" value="text" />
+              <input type="text" id="amount" />
             </div>
 
-            <div id="newingredient">
-              <a href="newingredient">
-                <Link to="/recipe">edit</Link>
-              </a>
-            </div>
+            <div id="newingredient"></div>
           </div>
           <div className="Instructions">
             <textarea id="info" rows="3" cols="80">
@@ -48,6 +44,9 @@ export default class EditRecipe extends Component {
             </textarea>
           </div>
         </div>
+        <a>
+          <Link to="/recipe">edit</Link>
+        </a>
       </div>
     );
   }
