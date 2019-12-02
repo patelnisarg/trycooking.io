@@ -1,1 +1,1 @@
-killall node
+sudo killall node
