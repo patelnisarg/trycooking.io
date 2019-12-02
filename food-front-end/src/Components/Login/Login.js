@@ -10,18 +10,25 @@ export default class Login extends Component {
       username: "",
       password: ""
     };
+
+    this.validateForm = this.validateForm.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   validateForm() {
     return this.state.email.length > 0 && this.state.password.length > 0;
   }
-  handleChange = event => {
+  handleChange (event) {
     this.setState({
       [event.target.id]: event.target.value
     });
   };
-  handleSubmit = event => {
+  handleSubmit (event) {
     event.preventDefault();
+    
+    alert(JSON.stringify(this.state));
   };
+
   render() {
     return (
       <div id="main">
@@ -32,7 +39,7 @@ export default class Login extends Component {
               Username
               <FormControl
                 autoFocus
-                className="form-input"
+                className="form-input margin-20"
                 type="username"
                 value={this.state.username}
                 onChange={this.handleChange}
@@ -41,13 +48,13 @@ export default class Login extends Component {
             <FormGroup controlId="password" bsSize="large">
               Password
               <FormControl
-                className="form-input"
+                className="form-input margin-20"
                 value={this.state.password}
                 onChange={this.handleChange}
                 type="password"
               />
             </FormGroup>
-            <Button>Submit</Button>
+            <Button onClick={this.handleSubmit}>Submit</Button>
           </form>
         </div>
       </div>

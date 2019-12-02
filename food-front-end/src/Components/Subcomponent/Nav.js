@@ -9,7 +9,7 @@ export default class Nav extends Component {
       <header>
         <div>
           <div className="center">
-            <img src={bannerImg} className="Banner-Component" alt="banner" />
+            <img src={bannerImg} className="Banner-Component center" alt="banner" />
           </div>
           <p className="log">
             <a href="Login">

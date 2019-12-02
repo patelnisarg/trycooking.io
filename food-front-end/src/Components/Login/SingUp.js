@@ -37,32 +37,32 @@ export default class SignUp extends Component {
     var username = this.state.username;
     var email = this.state.email;
 
-    if(email !== username){
+    if (email !== username) {
       alert('Usernames do not match');
       return;
     }
     var password = this.state.password;
     var confirm = this.state.confirm;
 
-    if(password !== confirm){
+    if (password !== confirm) {
       alert("Passwords do not match");
       return;
     }
 
-    post('http://localhost:3001/api/newUser', 
-    {
-      username: username,
-      password: password
-    },
-    (x) => {
-      if(x.success){
-        alert('New User Created.\nPlease log in from the main page.');
-        this.props.history.push('/');
+    post('http://localhost:3001/api/newUser',
+      {
+        username: username,
+        password: password
+      },
+      (x) => {
+        if (x.success) {
+          alert('New User Created.\nPlease log in from the main page.');
+          this.props.history.push('/');
+        }
+        else {
+          alert('That user already exists. Please select a different username');
+        }
       }
-      else{
-        alert('That user already exists. Please select a different username');
-      }
-    }
     );
   }
 
@@ -79,47 +79,47 @@ export default class SignUp extends Component {
         <h2>Sign Up</h2>
         <div>
           <form className="login">
-            <div>            
-              <div className="sec1">
+            <div>
+              <div className='row center-boxes'>
                 <FormGroup controlID="usernameLabel" bsSize="large">
                   Username
-                  <br />
-                  <FormControl 
-                    autoFocus 
-                    className='form-input' 
-                    id="username" 
-                    value={this.state.username} 
-                    onChange={this.handleChange} 
+                      <br />
+                  <FormControl
+                    autoFocus
+                    className='form-input margin-20'
+                    id="username"
+                    value={this.state.username}
+                    onChange={this.handleChange}
                   />
                 </FormGroup>
+                <FormGroup controlID="email" bsSize="large">
+                  RE:Username
+                      <br />
+                  <FormControl
+                    className='form-input margin-20'
+                    id='email'
+                    value={this.state.email}
+                    onChange={this.handleChange}
+                  />
+                </FormGroup>
+              </div>
+              <div className='row center-boxes'>
                 <FormGroup constrolID="password" bsSize="large">
                   Password
-                  <br />
-                  <FormControl 
-                    className='form-input'
+                    <br />
+                  <FormControl
+                    className='form-input margin-20'
                     id='password'
                     type='password'
                     value={this.state.password}
                     onChange={this.handleChange}
                   />
                 </FormGroup>
-              </div>
-              <div className="sec2">
-                <FormGroup controlID="email" bsSize="large">
-                  RE:Username
-                  <br />
-                  <FormControl 
-                  className='form-input'
-                  id='email'
-                  value={this.state.email} 
-                  onChange={this.handleChange}
-                  />
-                </FormGroup>
                 <FormGroup contrplID="confirm" bsSize="large">
                   Re:Password
-                  <br />
+                    <br />
                   <FormControl
-                    className='form-input'
+                    className='form-input margin-20'
                     id='confirm'
                     type="password"
                     value={this.state.confirm}
@@ -128,10 +128,11 @@ export default class SignUp extends Component {
                 </FormGroup>
               </div>
             </div>
-            <br />
-            <FormGroup contrplID="submit" bsSize="large">
-              <Button className='form-input form-button' onClick={this.handleSubmit}>Register</Button>
-            </FormGroup>
+            <div>
+              <FormGroup contrplID="submit" bsSize="large">
+                <Button className='form-input form-button' onClick={this.handleSubmit}>Register</Button>
+              </FormGroup>
+            </div>
           </form>
         </div>
       </div>
