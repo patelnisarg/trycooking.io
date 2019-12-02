@@ -1,12 +1,12 @@
 cd food-back-end
-npm update
+npm install
 chmod 777 start-server.sh
 ./start-server.sh
 
 cd ..
 cd build
 
-npm update
-nohup node serve.js>log &
+npm install
+./start.sh
 
 exit
