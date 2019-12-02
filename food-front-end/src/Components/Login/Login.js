@@ -24,28 +24,32 @@ export default class Login extends Component {
   };
   render() {
     return (
-      <div id="parent">
+      <div id="main">
         <img src={bannerImg} className="Banner-Component" alt="banner" />
-        <form onSubmit={this.handleSubmit} id="login">
-          <FormGroup controlId="username" bsSize="large">
-            Username
-            <FormControl
-              autoFocus
-              type="username"
-              value={this.state.username}
-              onChange={this.handleChange}
-            />
-          </FormGroup>
-          <FormGroup controlId="password" bsSize="large">
-            Password
-            <FormControl
-              value={this.state.password}
-              onChange={this.handleChange}
-              type="password"
-            />
-          </FormGroup>
-          <Button>Submit</Button>
-        </form>
+        <div id="parent">
+          <form onSubmit={this.handleSubmit} classname="login">
+            <FormGroup controlId="username" bsSize="large">
+              Username
+              <FormControl
+                autoFocus
+                className="form-input"
+                type="username"
+                value={this.state.username}
+                onChange={this.handleChange}
+              />
+            </FormGroup>
+            <FormGroup controlId="password" bsSize="large">
+              Password
+              <FormControl
+                className="form-input"
+                value={this.state.password}
+                onChange={this.handleChange}
+                type="password"
+              />
+            </FormGroup>
+            <Button>Submit</Button>
+          </form>
+        </div>
       </div>
     );
   }

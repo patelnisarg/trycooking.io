@@ -53,9 +53,11 @@ ul {
   background-color: black;
   color: white;
 }
-.temp {
-  width: 30%;
+.temp,
+#info,
+#description {
   height: 20%;
+  color: black;
 }
 li {
   margin-left: 2%;
@@ -80,5 +82,9 @@ a {
 }
 a:hover {
   background-color: white;
+  color: black;
+}
+#amount,
+#ingredient {
   color: black;
 }
