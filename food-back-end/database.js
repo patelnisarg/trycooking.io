@@ -218,20 +218,11 @@ function authenticateUser(username, p_hash, eventHandler){
 
 
 
-
-
-
-
-
-
-
-
-
 //This is how public methods are defined in Node.js
 exports.connect = connect;
 exports.saveRecipe = saveRecipe;
 exports.openRecipe = openRecipe;
 exports.deleteRecipe = deleteRecipe;
-
+exports.authenticateUser = authenticateUser;
 exports.addUser = addUser;
 exports.updateUser = updateUser;

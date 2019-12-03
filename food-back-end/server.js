@@ -133,6 +133,21 @@ router.post('/open', (req, res) => {
     })
   });
 
+  router.post('/login', (req, res) => {
+    console.log('login: ' + JSON.stringify(req.body));
+    var username = req.body.username;
+    var password = req.body.password;
+    database.authenticateUser(username, md5(password), (x) => {
+      if(x){
+        return res.json({success: true});
+      }
+      else{
+        return res.json({success: false});
+      }
+    })
+  });
+  
+
 // append /api for our http requests
 app.use('/api', router);
 
